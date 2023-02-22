@@ -1,6 +1,5 @@
 
 -- Servants: ohne Fremdschlüssel
-
 CREATE TABLE IF NOT EXISTS `mydb`.`servants` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `servant_name` VARCHAR(45) NOT NULL,
@@ -9,7 +8,6 @@ CREATE TABLE IF NOT EXISTS `mydb`.`servants` (
 ENGINE = InnoDB;
 
 -- Products: ohne Fremdschlüssel
-
 CREATE TABLE IF NOT EXISTS `mydb`.`products` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `product_name` VARCHAR(45) NOT NULL,
@@ -18,7 +16,6 @@ CREATE TABLE IF NOT EXISTS `mydb`.`products` (
 ENGINE = InnoDB;
 
 -- ServantsProducts (purchases)
-
 CREATE TABLE IF NOT EXISTS `mydb`.`purchases` (
   `servants_id` INT NOT NULL,
   `products_id` INT NOT NULL,
@@ -36,7 +33,5 @@ CREATE TABLE IF NOT EXISTS `mydb`.`purchases` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
-
-
 
 
