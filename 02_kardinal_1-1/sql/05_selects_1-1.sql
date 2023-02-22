@@ -40,3 +40,10 @@ WHERE cat_name = "Mausi"
 
 /* -- Inner Join 3 / Dienstzeit */
 -- "X - der Diener von Y - ist der Diener mit der längsten Dienstzeit" // MAX()
+SELECT 
+	
+	CONCAT("Der Diener ", servant_name, " von ", cat_name , " mit der längsten Dienstzeit ", ".") AS Dienstverhältnis
+FROM mydb.cats INNER JOIN mydb.servants
+ON mydb.cats.id = mydb.servants.cats_id
+#WHERE MAX(yrs_served)
+;
