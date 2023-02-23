@@ -49,4 +49,3 @@ INSERT INTO `mydb`.`kittens` (`id`, `kitten_name`, `fur_color`, `cats_id`) VALUE
 SELECT * FROM mydb.kittens;
 
 
-
